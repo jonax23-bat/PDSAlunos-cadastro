@@ -1,9 +1,10 @@
 name: Publicar no GitHub Pages
 
-# 1) Quando este workflow roda: a cada push na branch main
+# 1) Quando este workflow roda: a cada push na branch main ou manualmente
 on:
   push:
     branches: [main]
+  workflow_dispatch:
 
 # 2) Permissoes que o workflow precisa para publicar
 permissions:
